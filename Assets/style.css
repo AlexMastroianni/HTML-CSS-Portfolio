@@ -37,13 +37,14 @@ header h1 {
 
 .about {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+  justify-content: center;
   padding-top: 30px;
   padding-right: 20px;
   padding-left: 20px;
   display: inline-block;
   background-color: bisque;
+  width: 600px;
 }
 
 .about h2 {
@@ -51,16 +52,16 @@ header h1 {
   align-items: center;
   justify-content: center;
 }
-.about p {
+/* #showabout {
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
 }
 
-.about h2:hover + .about p {
+#showabout:hover {
   opacity: 100;
-}
+} */
 
 main {
   margin: 60px;
