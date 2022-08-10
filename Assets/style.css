@@ -1,9 +1,84 @@
-.navbar ul {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-family: Poppins;
+}
+
+header {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: bisque;
+}
+header h1 {
+  margin-right: auto;
+}
+.navbar {
+  position: relative;
+}
+
+.navbar li {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.navbar li:hover {
+  color: aqua;
+}
+
+.about {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: inline-block;
+  background-color: bisque;
+}
+
+.about h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.about h2:hover + .about p {
+  opacity: 100;
+}
+
+main {
+  margin: 60px;
+  padding: 20px;
+  border: 2px solid black;
+  display: flex;
+  margin-top: 2%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project1,
+.project2,
+.project3,
+.project4 {
+  border: 2px solid black;
   width: 400px;
-  float: right;
-  padding-right: 5%;
+  height: 400px;
+  padding: 10px;
+  margin: 20px;
 }
