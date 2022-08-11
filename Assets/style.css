@@ -186,7 +186,7 @@ footer {
 
 #contacts p {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -203,5 +203,9 @@ footer {
     height: 400px;
     padding: 10px;
     margin: 20px;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
