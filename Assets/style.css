@@ -7,6 +7,9 @@
   list-style: none;
   font-family: Poppins;
 }
+a:link {
+  text-decoration: none;
+}
 
 body {
   background-color: #b0d7e1;
@@ -35,8 +38,7 @@ main {
   border: 2px solid black;
   width: 20%;
   height: 20%;
-  border-radius: 0% 61% 16% 24%;
-  transition: ease-in-out;
+  border-radius: 15%;
   transition-duration: 1s;
 }
 
@@ -45,7 +47,16 @@ main {
   width: 20%;
   height: 20%;
   border-radius: 0% 0% 15% 15%;
-  scale: 1.5;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: skew(20deg, 20deg);
+  }
+  100% {
+    transform: skew(-20deg, -20deg);
+  }
 }
 
 header h1 {
@@ -75,7 +86,6 @@ header h1 {
   justify-content: center;
   text-align: center;
   justify-content: space-evenly;
-  padding-top: 60px;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 30px;
@@ -110,7 +120,7 @@ header h1 {
   opacity: 100;
 }
 
-.project1 {
+#project1 {
   display: flex;
   display: grid;
   border: 2px solid black;
@@ -123,9 +133,9 @@ header h1 {
   transition-duration: 1s;
 }
 
-.project2,
-.project3,
-.project4 {
+#project2,
+#project3,
+#project4 {
   display: flex;
   flex-wrap: wrap;
   border: 2px solid black;
@@ -138,10 +148,10 @@ header h1 {
   transition-duration: 1s;
 }
 
-.project1:hover,
-.project2:hover,
-.project3:hover,
-.project4:hover {
+#project1:hover,
+#project2:hover,
+#project3:hover,
+#project4:hover {
   transition: ease-out;
   transition-duration: 1s, 1s;
   background-color: #f1802d;
@@ -154,30 +164,27 @@ footer {
   display: inline;
 }
 
-.contacts {
+#contacts {
   margin-top: 150px;
 }
 
-.contacts h4 {
+#contacts h4 {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 50px;
   font-size: 40px;
   margin-bottom: 50px;
 }
 
-.contacts h4 {
+#contacts ul {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.contacts ul {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.contacts p {
+#contacts p {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
@@ -185,10 +192,10 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-  .project1,
-  .project2,
-  .project3,
-  .project4 {
+  #project1,
+  #project2,
+  #project3,
+  #project4 {
     display: flex;
     flex-wrap: wrap;
     border: 2px solid black;
